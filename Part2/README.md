@@ -68,6 +68,7 @@ is modulo 2 to the number of qubits.
 Read the code in *multi_adder.py* and the _draper_adder_notes_ notebook for
 more details.
 
+Start reading with |2> and make your way through to |0>.
 
 ## Executions
 The circuit solving a small instance is simulated and then run on IONQ's quantum
