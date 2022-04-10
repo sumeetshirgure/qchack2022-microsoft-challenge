@@ -46,8 +46,8 @@ Refer to the code in _subset_sum_solver.py_ and the _grover_search_test_ noteboo
 ### |1 > Subset sum oracle
 To apply Grover search, we need an oracle that recognizes a feasible set by
 flipping a phase, or by flipping a qubit (both of which are [interconvertible](
-https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm#Algorithm) up to
-an initialization.)
+https://en.wikipedia.org/wiki/Grover%27s_algorithm#Alternative_oracle_definition) up to
+an [initialization](https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm#Algorithm).
 We  can construct such an oracle by computing the sum of elements in the subset,
 comparing it with the target, flipping an auxiliary qubit if they are
 equal, and finally uncomputing the sum.
