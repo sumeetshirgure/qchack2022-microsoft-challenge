@@ -71,7 +71,7 @@ more details.
 Start reading with |2> and make your way through to |0>.
 
 ## Executions
-The circuit solving a small instance is simulated and then run on IONQ's quantum
+A circuit solving a small instance is simulated and then run on IONQ's quantum
 computer in the *ionq_execution* notebook.
 The smaller parts of the solution described in the previous section
 are also individually simulated in the respective notebooks.
