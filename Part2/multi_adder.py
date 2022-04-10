@@ -1,6 +1,6 @@
 from math import pi
 
-from qiskit import QuantumCircuit, QuantumRegister 
+from qiskit import QuantumCircuit
 from qiskit.circuit.library import QFT
 
 def MultiAdder(val_array, idx_reg, val_reg, little_endian=True, illustrate=False) :
