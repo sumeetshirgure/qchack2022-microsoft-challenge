@@ -76,3 +76,8 @@ computer in the *ionq_execution* notebook.
 The smaller parts of the solution described in the previous section
 are also individually simulated in the respective notebooks.
 
+
+#### Note
+The circuits could not be emulated on the quantinuum emulator.
+Mainly because the controlled phase gates in qiskit's QFT module could not be transpiled.
+Converting those controlled phases to controlled Z rotations might do the trick.
