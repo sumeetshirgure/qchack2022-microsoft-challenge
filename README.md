@@ -37,21 +37,21 @@ Since the project repository is the main deliverable for your project (there are
 
 ### Using Azure Quantum
 
-You should have received an invite to join quantum workspace [qchack-2022-b - Microsoft Azure](https://portal.azure.com/?quickstart=True#@achocronme.onmicrosoft.com/resource/subscriptions/[…]/Microsoft.Quantum/Workspaces/qchack-2022-b/overview). Join it, and use that workspace’s information to connect to Azure from the environment you’re using to work with the QDK:
+You should have received an invite to join quantum workspace [qchack-2022-b - Microsoft Azure](https://portal.azure.com/#@achocronme.onmicrosoft.com/resource/subscriptions/b0c3bbe3-7123-4ba4-9aa2-57d9845f4a1d/resourceGroups/AzureQuantum/providers/Microsoft.Quantum/Workspaces/qchack-2022-b/overview). Join it, and use that workspace’s information to connect to Azure from the environment you’re using to work with the QDK:
 
-* Subscription ID: b1d7f7f8-743f-458e-b3a0-3e09734d716d
-* Resource group: aq-hackathons
-* Workspace name: aq-hackathon-qchack2022
+* Subscription ID: b0c3bbe3-7123-4ba4-9aa2-57d9845f4a1d
+* Resource group: AzureQuantum
+* Workspace name: qchack-2022-b
 * Location: eastus
-* 
+
 You can use it from Python+Q# environment by using the `azure-quantum` package as follows:
 
 ```
 from azure.quantum import Workspace
 workspace = Workspace (
-    subscription_id = "b1d7f7f8-743f-458e-b3a0-3e09734d716d",
-    resource_group = "aq-hackathons",
-    name = "aq-hackathon-qchack2022",
+    subscription_id = "b0c3bbe3-7123-4ba4-9aa2-57d9845f4a1d",
+    resource_group = "AzureQuantum",
+    name = "qchack-2022-b",
     location = "eastus"
 )
 ```
@@ -61,7 +61,7 @@ or from Qiskit environment by using `azure.quantum.qiskit` package as follows:
 ```
 from azure.quantum.qiskit import AzureQuantumProvider
 provider = AzureQuantumProvider (
-    resource_id = "/subscriptions/b1d7f7f8-743f-458e-b3a0-3e09734d716d/resourceGroups/aq-hackathons/providers/Microsoft.Quantum/Workspaces/aq-hackathon-qchack2022",
+    resource_id = "/subscriptions/b0c3bbe3-7123-4ba4-9aa2-57d9845f4a1d/resourceGroups/AzureQuantum/providers/Microsoft.Quantum/Workspaces/qchack-2022-b",
     location = "eastus"
 )
 ```
